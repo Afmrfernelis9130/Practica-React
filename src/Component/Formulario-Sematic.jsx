@@ -161,7 +161,7 @@ export const LoginForm = () => {
 export const LoginForm2 = () => {
 
     const validationSchema = Yup.object().shape({
-        email: Yup.string().email('Correo electrónico inválido').required('Este campo es obligatorio'),
+        email: Yup.string().email('Correo  electrónico inválido').required('Este campo es obligatorio'),
         password: Yup.string().required('Este campo es obligatorio'),
     });
     const handleSubmit = async (values, { setSubmitting, setFieldError }) => {
@@ -205,6 +205,7 @@ export const LoginForm2 = () => {
                     </button>
                 </Form>
             )}
+
         </Formik>
     );
 };
